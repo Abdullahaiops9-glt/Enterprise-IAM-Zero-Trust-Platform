@@ -28,6 +28,50 @@ SAML/mTLS      Behavioral Analytics   Governance & Audit
 
 ---
 
+   ┌─────────────────┐
+                         │   User Request  │
+                         └────────┬────────┘
+                                  │
+                                  ▼
+                         ┌─────────────────┐
+                         │   Keycloak IdP  │
+                         │   SSO / SAML    │
+                         └────────┬────────┘
+                                  │
+                                  ▼
+                    ┌─────────────────────────┐
+                    │      Risk Engine        │
+                    │   ML Behavioral         │
+                    │      Analytics          │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │ Policy Decision Point   │
+                    │       (PDP)             │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │ Policy Enforcement      │
+                    │       (PEP)             │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │ Enterprise Resources    │
+                    └─────────────────────────┘
+
+       ┌────────────────┐       ┌────────────────┐
+       │ SAML / mTLS    │       │ Governance &   │
+       │ Federation     │       │ Audit          │
+       └────────────────┘       └────────────────┘
+                 │                       │
+                 └───────────┬───────────┘
+                             ▼
+                    Access Control &
+                    Security Monitoring
+
 ## Tools Used
 
 Python, Pandas, NumPy, Scikit-learn, Matplotlib, Docker, Keycloak, HashiCorp Vault
