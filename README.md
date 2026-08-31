@@ -28,49 +28,28 @@ SAML/mTLS      Behavioral Analytics   Governance & Audit
 
 ---
 
-   ┌─────────────────┐
-                         │   User Request  │
-                         └────────┬────────┘
-                                  │
-                                  ▼
-                         ┌─────────────────┐
-                         │   Keycloak IdP  │
-                         │   SSO / SAML    │
-                         └────────┬────────┘
-                                  │
-                                  ▼
-                    ┌─────────────────────────┐
-                    │      Risk Engine        │
-                    │   ML Behavioral         │
-                    │      Analytics          │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │ Policy Decision Point   │
-                    │       (PDP)             │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │ Policy Enforcement      │
-                    │       (PEP)             │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │ Enterprise Resources    │
-                    └─────────────────────────┘
-
-       ┌────────────────┐       ┌────────────────┐
-       │ SAML / mTLS    │       │ Governance &   │
-       │ Federation     │       │ Audit          │
-       └────────────────┘       └────────────────┘
-                 │                       │
-                 └───────────┬───────────┘
-                             ▼
-                    Access Control &
-                    Security Monitoring
+User Request
+     │
+     ▼
+Keycloak Identity Provider (IdP)
+     │
+     ├──────────────► SAML / mTLS Federation
+     │
+     ▼
+ML Risk Engine
+(Behavioral Analytics)
+     │
+     ▼
+Policy Decision Point (PDP)
+     │
+     ▼
+Policy Enforcement Point (PEP)
+     │
+     ▼
+Enterprise Resources
+     │
+     ▼
+Governance & Audit
 
 ## Tools Used
 
