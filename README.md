@@ -1,4 +1,4 @@
-# IAM Zero Trust Platform
+# Enterprise-IAM-Zero-Trust-Platform
 
 Enterprise Identity & Access Management with Zero Trust, Behavioral Analytics, and Automated Governance.
 
@@ -34,7 +34,7 @@ Python, Pandas, NumPy, Scikit-learn, Matplotlib, Docker, Keycloak, HashiCorp Vau
 
 ## Project Structure
 
-iam-zero-trust-platform/
+Enterprise-IAM-Zero-Trust-Platform/
 
 ├── docker-compose.yml              # Keycloak Docker deployment
 
