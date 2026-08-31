@@ -139,7 +139,7 @@ Enterprise-IAM-Zero-Trust-Platform/
 ```bash
 ### 1. Clone the repository
 git clone https://github.com/YOUR_USERNAME/iam-zero-trust-platform.git
-cd iam-zero-trust-platform
+cd Enterprise-IAM-Zero-Trust-Platform
 
 ### 2. Install Docker & Python libraries
 Install Docker, Python 3, pip, git
