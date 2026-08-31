@@ -1,13 +1,3 @@
-Compliance Mapping
-Table
-Component	NIST 800-63	ISO 27001	GDPR	SOX
-Keycloak IdP	Identity Assurance	Access Control	Data Protection	User Auth
-ML Risk Engine	Risk Adaptive	Monitoring	Breach Detection	Fraud Detection
-Governance	Audit Logging	SoD / Reviews	Consent / Accuracy	Access Reviews
-PAM / Break-Glass	Emergency Access	Privilege Control	Incident Response	Emergency Audit
-Compliance Dashboard	Reporting	Audit Trail	Accountability	Financial Controls
-
-
 # Enterprise-IAM-Zero-Trust-Platform
 
 Enterprise Identity & Access Management with Zero Trust, Behavioral Analytics, and Automated Governance.
