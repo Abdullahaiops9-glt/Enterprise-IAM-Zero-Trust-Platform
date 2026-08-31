@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: enterprise-keycloak
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin123
+      KC_DB: dev-mem
+    ports:
+      - "8080:8080"
+    command: start-dev
+
+  risk-engine:
+    build: .
+    container_name: iam-risk-engine
+    ports:
+      - "5000:5000"
+    depends_on:
+      - keycloak

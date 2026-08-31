@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<EntityDescriptor entityID="https://keycloak.enterprise-iam.com/realms/enterprise-iam"
+    xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        Location="https://keycloak.enterprise-iam.com/realms/enterprise-iam/protocol/saml"/>
+  </IDPSSODescriptor>
+</EntityDescriptor>

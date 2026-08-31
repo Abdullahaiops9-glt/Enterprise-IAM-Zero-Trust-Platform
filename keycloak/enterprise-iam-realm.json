@@ -1,0 +1,55 @@
+{
+  "realm": "enterprise-iam",
+  "displayName": "Enterprise IAM Platform",
+  "enabled": true,
+  "bruteForceProtected": true,
+  "failureFactor": 5,
+  "passwordPolicy": "length(12) and upperCase(1) and specialChars(1)",
+  "accessTokenLifespan": 300,
+  "roles": {
+    "realm": [
+      {
+        "name": "standard_user",
+        "description": "Regular employee"
+      },
+      {
+        "name": "privileged_user",
+        "description": "IT Administrator"
+      },
+      {
+        "name": "auditor",
+        "description": "Compliance read-only"
+      }
+    ]
+  },
+  "users": [
+    {
+      "username": "john.doe",
+      "email": "john.doe@enterprise.com",
+      "enabled": true,
+      "realmRoles": [
+        "standard_user"
+      ],
+      "credentials": [
+        {
+          "type": "password",
+          "value": "SecurePass@123"
+        }
+      ]
+    },
+    {
+      "username": "admin.smith",
+      "email": "admin.smith@enterprise.com",
+      "enabled": true,
+      "realmRoles": [
+        "privileged_user"
+      ],
+      "credentials": [
+        {
+          "type": "password",
+          "value": "AdminPass@456"
+        }
+      ]
+    }
+  ]
+}
