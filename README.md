@@ -23,8 +23,11 @@ a full ML risk pipeline, automated governance, PAM with break-glass, threat simu
 
 ## Architecture
 User Request → Keycloak IdP → Risk Engine (ML) → Policy Decision Point → Policy Enforcement → Enterprise Resources
+
      ↓              ↓                    ↓
+
 SAML/mTLS      Behavioral Analytics   Governance & Audit
+
 ## Tools Used
 
 Python, Pandas, NumPy, Scikit-learn, Matplotlib, Docker, Keycloak, HashiCorp Vault
