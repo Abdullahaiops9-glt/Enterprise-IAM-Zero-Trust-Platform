@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   keycloak:
     image: quay.io/keycloak/keycloak:latest
@@ -16,6 +15,6 @@ services:
     build: .
     container_name: iam-risk-engine
     ports:
-      - "5000:5000"
+      - "8000:8000"
     depends_on:
       - keycloak
