@@ -24,8 +24,9 @@ class RiskEngineHandler(BaseHTTPRequestHandler):
         print(f"[Risk Engine] {self.address_string()} - {format % args}")
 
 if __name__ == '__main__':
-    server = HTTPServer(('0.0.0.0', 5000), RiskEngineHandler)
+    server = HTTPServer(('0.0.0.0', 8000), RiskEngineHandler)
     print("=" * 50)
-    print("IAM Risk Engine — listening on port 5000")
+    print("IAM Risk Engine — listening on port 8000")
     print("=" * 50)
     server.serve_forever()
+
